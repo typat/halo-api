@@ -60,3 +60,6 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+src/main/resources/halo-api-auth-key
+
+target
