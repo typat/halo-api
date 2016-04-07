@@ -30,7 +30,7 @@ public class UgcFilmManifest {
     @JsonProperty("TopicName")
     private String TopicName;
     @JsonProperty("AcknowledgementTypeId")
-    private int AcknowledgementTypeId;
+    private long AcknowledgementTypeId;
     @JsonProperty("AuthenticationLifetimeExtensionSupported")
     private boolean AuthenticationLifetimeExtensionSupported;
 
@@ -140,7 +140,7 @@ public class UgcFilmManifest {
      *     The AcknowledgementTypeId
      */
     @JsonProperty("AcknowledgementTypeId")
-    public int getAcknowledgementTypeId() {
+    public long getAcknowledgementTypeId() {
         return AcknowledgementTypeId;
     }
 
@@ -150,7 +150,7 @@ public class UgcFilmManifest {
      *     The AcknowledgementTypeId
      */
     @JsonProperty("AcknowledgementTypeId")
-    public void setAcknowledgementTypeId(int AcknowledgementTypeId) {
+    public void setAcknowledgementTypeId(long AcknowledgementTypeId) {
         this.AcknowledgementTypeId = AcknowledgementTypeId;
     }
 

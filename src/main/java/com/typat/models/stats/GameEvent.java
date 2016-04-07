@@ -37,7 +37,7 @@ public class GameEvent {
     @JsonProperty("Assistants")
     private List<Object> Assistants = new ArrayList<>();
     @JsonProperty("DeathDisposition")
-    private int DeathDisposition;
+    private long DeathDisposition;
     @JsonProperty("IsAssassination")
     private boolean IsAssassination;
     @JsonProperty("IsGroundPound")
@@ -53,21 +53,21 @@ public class GameEvent {
     @JsonProperty("Killer")
     private Killer Killer;
     @JsonProperty("KillerAgent")
-    private int KillerAgent;
+    private long KillerAgent;
     @JsonProperty("KillerWeaponAttachmentIds")
-    private List<Integer> KillerWeaponAttachmentIds = new ArrayList<>();
+    private List<Long> KillerWeaponAttachmentIds = new ArrayList<>();
     @JsonProperty("KillerWeaponStockId")
-    private int KillerWeaponStockId;
+    private long KillerWeaponStockId;
     @JsonProperty("KillerWorldLocation")
     private KillerWorldLocation KillerWorldLocation;
     @JsonProperty("Victim")
     private Victim Victim;
     @JsonProperty("VictimAgent")
-    private int VictimAgent;
+    private long VictimAgent;
     @JsonProperty("VictimAttachmentIds")
     private List<Object> VictimAttachmentIds = new ArrayList<>();
     @JsonProperty("VictimStockId")
-    private int VictimStockId;
+    private long VictimStockId;
     @JsonProperty("VictimWorldLocation")
     private VictimWorldLocation VictimWorldLocation;
     @JsonProperty("EventName")
@@ -101,7 +101,7 @@ public class GameEvent {
      *     The DeathDisposition
      */
     @JsonProperty("DeathDisposition")
-    public int getDeathDisposition() {
+    public long getDeathDisposition() {
         return DeathDisposition;
     }
 
@@ -111,7 +111,7 @@ public class GameEvent {
      *     The DeathDisposition
      */
     @JsonProperty("DeathDisposition")
-    public void setDeathDisposition(int DeathDisposition) {
+    public void setDeathDisposition(long DeathDisposition) {
         this.DeathDisposition = DeathDisposition;
     }
 
@@ -261,7 +261,7 @@ public class GameEvent {
      *     The KillerAgent
      */
     @JsonProperty("KillerAgent")
-    public int getKillerAgent() {
+    public long getKillerAgent() {
         return KillerAgent;
     }
 
@@ -271,7 +271,7 @@ public class GameEvent {
      *     The KillerAgent
      */
     @JsonProperty("KillerAgent")
-    public void setKillerAgent(int KillerAgent) {
+    public void setKillerAgent(long KillerAgent) {
         this.KillerAgent = KillerAgent;
     }
 
@@ -281,7 +281,7 @@ public class GameEvent {
      *     The KillerWeaponAttachmentIds
      */
     @JsonProperty("KillerWeaponAttachmentIds")
-    public List<Integer> getKillerWeaponAttachmentIds() {
+    public List<Long> getKillerWeaponAttachmentIds() {
         return KillerWeaponAttachmentIds;
     }
 
@@ -291,7 +291,7 @@ public class GameEvent {
      *     The KillerWeaponAttachmentIds
      */
     @JsonProperty("KillerWeaponAttachmentIds")
-    public void setKillerWeaponAttachmentIds(List<Integer> KillerWeaponAttachmentIds) {
+    public void setKillerWeaponAttachmentIds(List<Long> KillerWeaponAttachmentIds) {
         this.KillerWeaponAttachmentIds = KillerWeaponAttachmentIds;
     }
 
@@ -301,7 +301,7 @@ public class GameEvent {
      *     The KillerWeaponStockId
      */
     @JsonProperty("KillerWeaponStockId")
-    public int getKillerWeaponStockId() {
+    public long getKillerWeaponStockId() {
         return KillerWeaponStockId;
     }
 
@@ -311,7 +311,7 @@ public class GameEvent {
      *     The KillerWeaponStockId
      */
     @JsonProperty("KillerWeaponStockId")
-    public void setKillerWeaponStockId(int KillerWeaponStockId) {
+    public void setKillerWeaponStockId(long KillerWeaponStockId) {
         this.KillerWeaponStockId = KillerWeaponStockId;
     }
 
@@ -361,7 +361,7 @@ public class GameEvent {
      *     The VictimAgent
      */
     @JsonProperty("VictimAgent")
-    public int getVictimAgent() {
+    public long getVictimAgent() {
         return VictimAgent;
     }
 
@@ -371,7 +371,7 @@ public class GameEvent {
      *     The VictimAgent
      */
     @JsonProperty("VictimAgent")
-    public void setVictimAgent(int VictimAgent) {
+    public void setVictimAgent(long VictimAgent) {
         this.VictimAgent = VictimAgent;
     }
 
@@ -401,7 +401,7 @@ public class GameEvent {
      *     The VictimStockId
      */
     @JsonProperty("VictimStockId")
-    public int getVictimStockId() {
+    public long getVictimStockId() {
         return VictimStockId;
     }
 
@@ -411,7 +411,7 @@ public class GameEvent {
      *     The VictimStockId
      */
     @JsonProperty("VictimStockId")
-    public void setVictimStockId(int VictimStockId) {
+    public void setVictimStockId(long VictimStockId) {
         this.VictimStockId = VictimStockId;
     }
 

@@ -1,6 +1,7 @@
 package com.typat.services;
 
 
+import com.typat.models.stats.EventsForMatch;
 import com.typat.models.stats.MatchesForPlayer;
 import org.apache.http.client.utils.URIBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +43,12 @@ public class StatsService {
 		return null;
 	}
 
-	public void getEventsForMatch(String matchId) {
-
+	public EventsForMatch getEventsForMatch(String matchId) {
+		String url = STATS_URI + "/matches/" + matchId + "/events";
+		ResponseEntity<EventsForMatch> forEntity = restTemplate.getForEntity(url, EventsForMatch.class);
+		if (forEntity.getStatusCode().equals(HttpStatus.OK)) {
+			return forEntity.getBody();
+		}
+		return null;
 	}
 }
